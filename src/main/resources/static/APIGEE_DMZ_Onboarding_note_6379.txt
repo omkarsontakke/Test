@@ -1,0 +1,54 @@
+Dear DMZ Support,
+ 
+Please create below mentioned app for IPS to Snorkel Clients onboarding. Details of the same are provided in the JIRA.
+
+=====================Onboarding===================================
+
+Proxy Name:- Snorkel-InternalApplication
+API Name:- Snorkel
+APIGEE PROD URL: https://igateway.icicibank.com/snorkel-filetransfer/internal/filepush
+Product Name: Snorkel
+Developer Email ID: kiran.pawar1@ext.icicibank.com
+Environment Name: prod02-ext
+
+================================================================
+
+Steps to create a new app:-
+ 
+Step 1:- Create new APP named as "SHAKTIPUH2H_IPS".
+
+Step 2:- Go to Notes -> Add JIRA ID - "HDAG-6379"
+
+Step 3:- Add the above mentioned product and Developer ID in APP.
+
+Step 4:- Add the mentioned Custom Attributes in the APP.
+
+Below are the mentioned Custom Attributes:
+
+key: ClientName
+value: SHAKTIPUH2H
+
+key: PeerCode
+value: 6698
+
+key: IPS_Source_Path
+value: /cmsips/ora10gr3/H2H_OUT/6698/
+
+key: ReversalBackup
+value: /cmsips/SHAKTIPUH2H/Outward/resp/
+
+key: ReversalFilePath
+value: /cmsips/SHAKTIPUH2H/Outward/src/
+
+key: SnorkelFilePath
+value: /cmsips/MULTIUPLOAD/Encrypted_API/
+
+key: prefix_name
+value: 1000
+
+key: Client Name
+value: SHAKTIPUH2H_IPS
+
+Step 4:- Create below mention KVM & Key in prod02-ext  environment.
+KVM NAME: IPS-CONFIG
+KEY NAME: {"name" : "6698", "value" : "apikey"}
